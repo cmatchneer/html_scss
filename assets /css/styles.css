@@ -695,6 +695,11 @@ ul {
   background: #212353;
   transition: all 0.5s ease;
 }
+@media (max-width: 820px) {
+  .footer-col .social-links a {
+    margin: 0;
+  }
+}
 
 .footer-col .social-links a:hover {
   color: #24262b;
