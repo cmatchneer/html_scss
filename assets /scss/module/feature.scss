@@ -1,0 +1,85 @@
+.all_features {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  @include clearfix();
+}
+%feature {
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  border-radius: 90% 10% 10% 10%;
+
+  @include resize(1140px) {
+    width: 350px;
+    margin-left: 75px;
+  }
+  @include resize(1080px) {
+    width: 350px;
+    margin-left: 50px;
+  }
+  @include resize(1000px) {
+    width: 300px;
+    margin-left: 50px;
+  }
+  @include resize(800px) {
+    margin-left: 10px;
+  }
+  @include resize(600px) {
+    margin-left: 80px;
+  }
+
+  @include clearfix();
+}
+.first {
+  @extend %feature;
+  background-color: $teal;
+}
+.second {
+  @extend %feature;
+  background-color: $light_purple;
+}
+.third {
+  @extend %feature;
+  background-color: $pink;
+}
+.fourth {
+  @extend %feature;
+  background-color: $blue;
+}
+.feature_pic {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  padding-top: 70px;
+  z-index: 1;
+}
+.feature_text_box {
+  position: relative;
+  font-weight: 100;
+
+  font-size: 16px;
+  padding: 10px;
+  @include resize(1040px) {
+    font-size: 12px;
+  }
+}
+.feature_btn {
+  position: relative;
+  float: right;
+  margin-right: 40px;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+@include resize(1040px) {
+  .feature_btn {
+    font-size: 12px;
+  }
+}

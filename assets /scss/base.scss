@@ -1,0 +1,56 @@
+html {
+  font-size: 18px;
+  background-color: $gray;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: grid;
+}
+.holder {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica;
+}
+.purple {
+  color: $purple;
+}
+
+.circle {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: $purple;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+.oval {
+  float: left;
+  padding-bottom: 10px;
+  width: 15px;
+  height: 30px;
+  background: $role-color;
+  border-radius: 50px / 50px;
+  float: right;
+}
+#bottom_oval {
+  float: left;
+  margin-top: -5x;
+  margin-right: 10px;
+}
+#bottom_circle {
+  margin-top: 10px;
+}
+.break {
+  border: 1px solid $purple;
+}

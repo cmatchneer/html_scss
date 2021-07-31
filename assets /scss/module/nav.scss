@@ -1,0 +1,116 @@
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: $gray;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  color: $purple;
+  padding: 10px 10px 10px 10px;
+  float: left;
+}
+
+.nav > .toggle-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  // float: left;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: $black;
+}
+.nav-button {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-left: 700px;
+  color: $black;
+  @include resize(1310px) {
+    margin-left: 500px;
+  }
+  @include resize(1110px) {
+    margin-left: 350px;
+  }
+  @include resize(1000px) {
+    margin-left: 280px;
+  }
+  @include resize(900px) {
+    margin-left: 180px;
+  }
+  @include resize(800px) {
+    margin-left: 80px;
+  }
+  @include resize(700px) {
+    margin-left: 0px;
+  }
+}
+.nav > #nav-check {
+  display: none;
+}
+@include resize(600px) {
+  .nav-button {
+    margin-left: 0px;
+  }
+  .nav > .toggle-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .toggle-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    padding: 13px;
+  }
+  .nav > .toggle-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: $pink;
+  }
+  .nav > .toggle-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 4px solid $purple;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: $gray;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+}

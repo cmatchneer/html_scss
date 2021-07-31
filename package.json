@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "node": "^16.5.0",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "name": "responsive",
+  "version": "1.0.0",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chris matchneer",
+  "license": "ISC",
+  "description": ""
+}
