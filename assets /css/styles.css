@@ -1264,10 +1264,25 @@ button.active {
   background-color: white;
   margin-left: 15px;
 }
-@media (max-width: 677px) {
+@media (max-width: 900px) {
   .trial_button .trial_demo {
-    padding-bottom: 3px;
-    padding-left: 0px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 750px) {
+  .trial_button .trial_demo {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .trial_button .trial_demo {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 7px;
   }
 }
 @media (max-width: 550px) {
