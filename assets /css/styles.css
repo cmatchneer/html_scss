@@ -64,6 +64,13 @@ h6 {
   border: 1px solid #9c69e2;
 }
 
+.trapezium {
+  border-bottom: 200px solid #333;
+  border-left: 50px solid transparent;
+  height: 0;
+  width: 400px;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -485,7 +492,12 @@ th {
   float: left;
   margin-left: 50px;
   margin-bottom: 30px;
-  border-radius: 90% 10% 10% 10%;
+  border-radius: 300px 10% 10% 10%;
+}
+@media (max-width: 1680px) {
+  .fourth, .third, .second, .first {
+    margin-left: 100px;
+  }
 }
 @media (max-width: 1140px) {
   .fourth, .third, .second, .first {
@@ -871,8 +883,18 @@ ul {
   height: 50px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-left: 700px;
+  margin-left: 900px;
   color: black;
+}
+@media (max-width: 1680px) {
+  .nav-button {
+    margin-left: 800px;
+  }
+}
+@media (max-width: 1440px) {
+  .nav-button {
+    margin-left: 600px;
+  }
 }
 @media (max-width: 1310px) {
   .nav-button {

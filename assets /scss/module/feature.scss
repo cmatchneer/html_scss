@@ -14,8 +14,10 @@
   float: left;
   margin-left: 50px;
   margin-bottom: 30px;
-  border-radius: 90% 10% 10% 10%;
-
+  border-radius: 300px 10% 10% 10%;
+  @include resize(1680px) {
+    margin-left: 100px;
+  }
   @include resize(1140px) {
     width: 350px;
     margin-left: 75px;

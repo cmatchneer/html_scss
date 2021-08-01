@@ -40,8 +40,14 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  margin-left: 700px;
+  margin-left: 900px;
   color: $black;
+  @include resize(1680px) {
+    margin-left: 800px;
+  }
+  @include resize(1440px) {
+    margin-left: 600px;
+  }
   @include resize(1310px) {
     margin-left: 500px;
   }

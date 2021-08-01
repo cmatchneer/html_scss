@@ -54,3 +54,10 @@ h6 {
 .break {
   border: 1px solid $purple;
 }
+.trapezium {
+  border-bottom: 200px solid #333;
+  border-left: 50px solid transparent;
+  // border-right: 50px solid transparent;
+  height: 0;
+  width: 400px;
+}
