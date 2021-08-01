@@ -475,6 +475,7 @@ th {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  width: 1000px;
 }
 .all_features:before, .all_features:after {
   content: "";
@@ -482,6 +483,37 @@ th {
 }
 .all_features:after {
   clear: both;
+}
+@media (max-width: 1080px) {
+  .all_features {
+    margin-left: -20px;
+  }
+}
+@media (max-width: 1000px) {
+  .all_features {
+    margin-left: -60px;
+  }
+}
+@media (max-width: 900px) {
+  .all_features {
+    width: 850px;
+    margin-left: -65px;
+  }
+}
+@media (max-width: 700px) {
+  .all_features {
+    width: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .all_features {
+    width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .all_features {
+    width: 500px;
+  }
 }
 
 .fourth, .third, .second, .first {
@@ -494,37 +526,31 @@ th {
   margin-bottom: 30px;
   border-radius: 300px 10% 10% 10%;
 }
-@media (max-width: 1680px) {
-  .fourth, .third, .second, .first {
-    margin-left: 100px;
-  }
-}
 @media (max-width: 1140px) {
   .fourth, .third, .second, .first {
-    width: 350px;
-    margin-left: 75px;
-  }
-}
-@media (max-width: 1080px) {
-  .fourth, .third, .second, .first {
-    width: 350px;
-    margin-left: 50px;
-  }
-}
-@media (max-width: 1000px) {
-  .fourth, .third, .second, .first {
-    width: 300px;
-    margin-left: 50px;
+    margin-left: 5px;
   }
 }
 @media (max-width: 800px) {
   .fourth, .third, .second, .first {
+    width: 330px;
     margin-left: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .fourth, .third, .second, .first {
+    width: 310px;
   }
 }
 @media (max-width: 600px) {
   .fourth, .third, .second, .first {
-    margin-left: 80px;
+    width: 290px;
+  }
+}
+@media (max-width: 500px) {
+  .fourth, .third, .second, .first {
+    margin-left: 0;
+    width: 250px;
   }
 }
 .fourth:before, .third:before, .second:before, .first:before, .fourth:after, .third:after, .second:after, .first:after {
@@ -579,12 +605,24 @@ th {
   background: none;
   font-weight: bold;
 }
-
 @media (max-width: 1040px) {
   .feature_btn {
     font-size: 12px;
+    margin-right: 75px;
   }
 }
+@media (max-width: 800px) {
+  .feature_btn {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .feature_btn {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+}
+
 .desc {
   background-color: rgba(240, 99, 184, 0.15);
   margin: 0 auto;
